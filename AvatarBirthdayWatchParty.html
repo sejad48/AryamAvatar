@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avatar Birthday Watch Party</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-sky-950 via-blue-900 to-orange-950 text-white overflow-x-hidden">
+  <!-- Hero Section -->
+  <section class="relative px-6 py-20 text-center">
+    <div class="max-w-5xl mx-auto">
+      <div class="inline-block px-4 py-1 rounded-full bg-white/10 backdrop-blur mb-6 text-sm tracking-wide uppercase">
+        Birthday Watch Party
+      </div>
+
+      <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
+        For The Avatar Fan Who
+        <span class="block text-orange-300">Brings Balance ✨</span>
+      </h1>
+
+      <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-10 leading-relaxed">
+        A custom streaming night made with love. Snacks ready, Appa waiting,
+        and your favorite adventure about to begin.
+      </p>
+
+      <a
+        href="#watch"
+        class="inline-block px-8 py-4 rounded-2xl bg-orange-400 text-black font-semibold hover:scale-105 transition-transform"
+      >
+        Start Watching
+      </a>
+    </div>
+
+    <div class="absolute top-10 left-10 w-24 h-24 rounded-full bg-sky-400/10 blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-orange-400/10 blur-3xl"></div>
+  </section>
+
+  <!-- Player Section -->
+  <section id="watch" class="px-6 pb-20">
+    <div class="max-w-6xl mx-auto bg-black/30 border border-white/10 rounded-3xl p-4 md:p-6 backdrop-blur shadow-2xl">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+        <div>
+          <h2 class="text-3xl font-bold">Avatar: The Last Airbender</h2>
+          <p class="text-blue-100 mt-1">
+            Birthday marathon mode activated 🌊⛰️🔥💨
+          </p>
+        </div>
+
+        <div class="flex gap-2 flex-wrap">
+          <span class="px-4 py-2 rounded-full bg-sky-400/20 text-sm">Water</span>
+          <span class="px-4 py-2 rounded-full bg-emerald-400/20 text-sm">Earth</span>
+          <span class="px-4 py-2 rounded-full bg-orange-400/20 text-sm">Fire</span>
+          <span class="px-4 py-2 rounded-full bg-slate-200/20 text-sm">Air</span>
+        </div>
+      </div>
+
+      <!-- Responsive Player -->
+      <div class="relative w-full overflow-hidden rounded-2xl border border-white/10" style="padding-bottom: 56.25%;">
+        <iframe
+          src="https://player.videasy.net/tv/246/1/1?nextEpisode=true&autoplayNextEpisode=true&episodeSelector=true&overlay=true&color=F59E0B"
+          class="absolute top-0 left-0 w-full h-full"
+          frameborder="0"
+          allowfullscreen
+          allow="encrypted-media"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Favorite Episodes -->
+  <section class="px-6 pb-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Favorite Episodes</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white/10 border border-white/10 rounded-3xl p-6 backdrop-blur hover:-translate-y-1 transition-transform">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-300 to-orange-300 mb-5"></div>
+          <h3 class="text-2xl font-semibold mb-3">The Boy in the Iceberg</h3>
+          <p class="text-blue-100">Where the adventure begins.</p>
+        </div>
+
+        <div class="bg-white/10 border border-white/10 rounded-3xl p-6 backdrop-blur hover:-translate-y-1 transition-transform">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-300 to-orange-300 mb-5"></div>
+          <h3 class="text-2xl font-semibold mb-3">The Blue Spirit</h3>
+          <p class="text-blue-100">One of the most iconic episodes.</p>
+        </div>
+
+        <div class="bg-white/10 border border-white/10 rounded-3xl p-6 backdrop-blur hover:-translate-y-1 transition-transform">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-300 to-orange-300 mb-5"></div>
+          <h3 class="text-2xl font-semibold mb-3">Sozin's Comet</h3>
+          <p class="text-blue-100">An unforgettable finale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Birthday Message -->
+  <section class="px-6 pb-24">
+    <div class="max-w-4xl mx-auto text-center bg-white/10 border border-white/10 rounded-[2rem] p-10 backdrop-blur">
+      <p class="text-xl md:text-2xl leading-relaxed text-blue-50">
+        “Some friendships are like the four elements — different on their own,
+        but incredible together.”
+      </p>
+
+      <div class="mt-8 text-orange-300 font-semibold text-lg">
+        Happy Birthday 💛
+      </div>
+    </div>
+  </section>
+</body>
+</html>
