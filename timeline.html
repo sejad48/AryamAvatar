@@ -5,35 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avatar Universe Timeline</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #1b2137;
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05) 0 2px, transparent 2px),
+        radial-gradient(circle at 80% 30%, rgba(255,255,255,0.04) 0 2px, transparent 2px),
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 120px 120px, 160px 160px, 90px 90px, 90px 90px;
+      background-position: 0 0, 30px 40px, 0 0, 0 0;
+    }
+  </style>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-sky-950 via-blue-900 to-orange-950 text-white overflow-x-hidden">
+<body class="text-white min-h-screen overflow-x-hidden">
 
-  <section class="px-6 py-10 text-center">
-    <h1 class="text-4xl md:text-6xl font-black mb-4">Avatar Legends Timeline</h1>
-    <p class="text-blue-100 max-w-2xl mx-auto">
-      An embedded view of the official Avatar Studios timeline.
-    </p>
-  </section>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
 
-  <section class="px-6 pb-12">
-    <div class="max-w-7xl mx-auto">
-      <nav class="flex justify-center gap-4 mb-8">
-        <a href="index.html" class="px-5 py-2 rounded-full bg-white/10 hover:bg-white/20 transition">Watch Party</a>
-        <a href="timeline.html" class="px-5 py-2 rounded-full bg-orange-400 text-black font-semibold">Timeline</a>
-      </nav>
+    <section class="grid lg:grid-cols-2 gap-8 items-center bg-black/15 border border-white/10 rounded-3xl p-6 md:p-10 shadow-2xl">
+      <div class="space-y-6">
+        <div class="text-5xl md:text-7xl font-black tracking-tight text-zinc-100">2005</div>
+        <div class="text-4xl md:text-6xl font-black tracking-tight">Season 1</div>
+        <h1 class="text-2xl md:text-4xl font-bold">Avatar: The Last Airbender</h1>
 
-      <div class="bg-black/30 border border-white/10 rounded-3xl p-4 md:p-6">
-        <div class="relative w-full" style="padding-bottom: 120%;">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full rounded-2xl"
-            src="https://www.avatarstudiosofficial.com/timeline/"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+        <div class="flex items-center gap-3 text-lg md:text-xl">
+          <img src="avatar-studios/images/timelines/aang-icon.png" alt="Avatar Aang" class="w-12 h-12 rounded-full bg-white object-cover border-2 border-white/80" />
+          <div class="text-amber-300 font-bold">Era of Avatar Aang</div>
+          <span class="text-white/70">|</span>
+          <div class="text-white/80">TV/Streaming</div>
+        </div>
+
+        <p class="text-lg md:text-2xl leading-relaxed max-w-xl text-white/95">
+          The long-lost Avatar, Aang, is found in an iceberg by siblings Katara and Sokka. Aang learns he’s the last of the Air Nomads and has only months to stop a war waged by the Fire Nation for 100 years; he must master all four elements to save the world.
+        </p>
+
+        <a href="index.html" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-slate-600 hover:bg-slate-500 transition font-black text-white text-xl tracking-wide">
+          WATCH ON PARAMOUNT+
+        </a>
+      </div>
+
+      <div class="flex justify-center lg:justify-end">
+        <div class="bg-white rounded-lg p-2 shadow-2xl border-4 border-black/80">
+          <img
+            src="avatar-studios/images/timelines/atla-season-1.jpg"
+            alt="Avatar: The Last Airbender Season 1"
+            class="w-full max-w-xl h-auto rounded-sm object-cover"
+          />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+  </main>
 </body>
 </html>
