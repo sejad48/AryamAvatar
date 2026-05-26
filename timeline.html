@@ -1,237 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Avatar Legends Timeline</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      color: #fff;
-      font-family: Inter, sans-serif;
-      background-color: #1b2137;
-      background-image:
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05) 0 2px, transparent 2px),
-        radial-gradient(circle at 80% 30%, rgba(255,255,255,0.04) 0 2px, transparent 2px),
-        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-      background-size: 120px 120px, 160px 160px, 90px 90px, 90px 90px;
-      background-position: 0 0, 30px 40px, 0 0, 0 0;
-      overflow-x: hidden;
-    }
-
-    .page {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 32px 24px 80px;
-    }
-
-    .header {
-      text-align: center;
-      padding: 24px 0 40px;
-    }
-
-    .header h1 {
-      margin: 0;
-      font-size: clamp(2.6rem, 6vw, 5.5rem);
-      line-height: 0.95;
-      font-weight: 900;
-      letter-spacing: -0.03em;
-      font-family: Georgia, 'Times New Roman', serif;
-    }
-
-    .header p {
-      margin: 24px auto 0;
-      max-width: 1150px;
-      font-size: clamp(1.05rem, 2.2vw, 2rem);
-      line-height: 1.15;
-      opacity: 0.85;
-    }
-
-    .timeline__timePointContainer__z4GyJ {
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0 auto;
-      max-width: 950px;
-      width: 100%;
-      padding-top: 110px;
-    }
-
-    .timeline__contentBox__rDPm6 {
-      align-items: center;
-      background: transparent;
-      border-radius: 4px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      line-height: 160%;
-      padding: 32px;
-      position: relative;
-      text-align: left;
-      width: 100%;
-      gap: 32px;
-    }
-
-    .timeline__contentBoxItems__Vgsdt {
-      flex: 1;
-      max-width: 50%;
-    }
-
-    .timeline__timelineImg__y2oKr {
-      border: 2px solid #000;
-      border-radius: 4px;
-      width: 450px;
-      max-width: 100%;
-      object-fit: cover;
-      display: block;
-      background: #fff;
-    }
-
-    .timeline__header__lIXD9 {
-      color: #fff;
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 64px;
-      padding-bottom: 20px;
-      margin: 0;
-      line-height: 0.95;
-    }
-
-    .timeline__introBoxCopy__aOEJa {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      padding-top: 0;
-      text-align: left;
-      font-family: Georgia, 'Times New Roman', serif;
-    }
-
-    .timeline__introBoxCopy__aOEJa h2 {
-      font-size: 48px;
-      opacity: .8;
-      margin: 0 0 12px 0;
-      line-height: 1;
-    }
-
-    .timeline__introBoxCopy__aOEJa h1 {
-      font-size: clamp(2.2rem, 4vw, 3.4rem);
-      line-height: 1.05;
-      margin: 0 0 12px 0;
-    }
-
-    .timeline__contentLabel__yNsZz {
-      align-items: center;
-      color: #bd9b60;
-      display: flex;
-      flex-direction: row;
-      font-size: 20px;
-      gap: 8px;
-      margin: 0;
-      font-family: Georgia, 'Times New Roman', serif;
-      font-weight: 700;
-      flex-wrap: wrap;
-    }
-
-    .timeline__labelImg__ZBMLO {
-      height: 30px;
-      width: 30px;
-      border-radius: 999px;
-      object-fit: cover;
-      background: #fff;
-      border: 2px solid rgba(255,255,255,0.8);
-    }
-
-    .timeline__divider__lFciR {
-      color: #fff;
-      opacity: .5;
-    }
-
-    .timeline__text__JBPcP {
-      font-size: 16px;
-      line-height: 1.4;
-      padding-right: 35px;
-      margin-top: 18px;
-      max-width: 95%;
-      font-family: Arial, sans-serif;
-    }
-
-    @media (max-width: 1023px) {
-      .timeline__contentBox__rDPm6 {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-      }
-
-      .timeline__contentBoxItems__Vgsdt {
-        max-width: 100%;
-      }
-
-      .timeline__timelineImg__y2oKr {
-        width: 100%;
-      }
-
-      .timeline__introBoxCopy__aOEJa {
-        align-items: center;
-        text-align: center;
-      }
-
-      .timeline__text__JBPcP {
-        padding-right: 0;
-        text-align: left;
-        max-width: 100%;
-      }
-
-      .timeline__header__lIXD9 {
-        font-size: clamp(3rem, 10vw, 4.8rem);
-      }
-
-      .timeline__introBoxCopy__aOEJa h2 {
-        font-size: clamp(2rem, 8vw, 3rem);
-      }
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Avatar Legends Timeline</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #1b2137;
+            background-image:
+                radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.05) 0 2px, transparent 2px),
+                radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.04) 0 2px, transparent 2px),
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 120px 120px, 160px 160px, 90px 90px, 90px 90px;
+            background-position: 0 0, 30px 40px, 0 0, 0 0;
+        }
+    </style>
 </head>
-<body>
-  <main class="page">
-    <header class="header">
-      <h1>The Avatar Legends Timeline</h1>
-      <p>
-        Take a journey with the Avatar Legends through the centuries. Scroll down to discover content release dates and explore the pivotal events that shaped the rich history of the Four Nations.
-      </p>
+
+<body class="text-white min-h-screen overflow-x-hidden">
+
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-black tracking-tight text-white">
+            The Avatar Legends Timeline
+        </h1>
+        <p class="mt-6 text-lg md:text-3xl leading-relaxed text-white/85 max-w-6xl mx-auto">
+            Take a journey with the Avatar Legends through the centuries. Scroll down to discover content release dates
+            and explore the pivotal events that shaped the rich history of the Four Nations.
+        </p>
     </header>
 
-    <section class="timeline__timePointContainer__z4GyJ">
-      <div class="timeline__contentBox__rDPm6">
-        <div class="timeline__contentBoxItems__Vgsdt">
-          <h1 class="timeline__header__lIXD9">2005</h1>
-          <div class="timeline__introBoxCopy__aOEJa">
-            <h2>Season 1</h2>
-            <h1>Avatar: The Last Airbender</h1>
-            <h4 class="timeline__contentLabel__yNsZz">
-              <img class="timeline__labelImg__ZBMLO" src="avatar-studios/images/timelines/aang-icon.png" alt="Avatar Aang" />
-              <span>Era of Avatar Aang</span>
-              <span class="timeline__divider__lFciR">|</span>
-              <span>TV/Streaming</span>
-            </h4>
-          </div>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
 
-          <p class="timeline__text__JBPcP">
-            The long-lost Avatar, Aang, is found in an iceberg by siblings Katara and Sokka. Aang learns he’s the last of the Air Nomads and has only months to stop a war waged by the Fire Nation for 100 years; he must master all four elements to save the world.
-          </p>
-        </div>
+        <section
+            class="grid lg:grid-cols-2 gap-8 items-center bg-black/15 border border-white/10 rounded-3xl p-6 md:p-10 shadow-2xl">
+            <div class="space-y-6">
+                <div class="text-5xl md:text-7xl font-black tracking-tight text-zinc-100">2005</div>
+                <div class="text-4xl md:text-6xl font-black tracking-tight">Season 1</div>
+                <h2 class="text-2xl md:text-4xl font-bold">Avatar: The Last Airbender</h2>
 
-        <img
-          class="timeline__timelineImg__y2oKr"
-          src="avatar-studios/images/timelines/atla-season-1.jpg"
-          alt="Avatar: The Last Airbender Season 1"
-        />
-      </div>
-    </section>
-  </main>
+                <div class="flex items-center gap-3 text-lg md:text-xl">
+                    <img src="avatar-studios/images/timelines/avatar-aang.webp" alt="Avatar Aang"
+                        class="w-12 h-12 rounded-full bg-white object-cover border-2 border-white/80" />
+                    <div class="text-amber-300 font-bold">Era of Avatar Aang</div>
+                    <span class="text-white/70">|</span>
+                    <div class="text-white/80 font-bold">TV/Streaming</div>
+                </div>
+
+                <p class="text-lg md:text-2xl leading-relaxed max-w-xl text-white/95">
+                    The long-lost Avatar, Aang, is found in an iceberg by siblings Katara and Sokka. Aang learns he’s
+                    the last of the Air Nomads and has only months to stop a war waged by the Fire Nation for 100 years;
+                    he must master all four elements to save the world.
+                </p>
+                <a href="index.html"
+                    class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-slate-600 hover:bg-slate-500 transition font-black text-white text-xl tracking-wide">
+                    WATCH
+                </a>
+
+            </div>
+
+            <div class="flex justify-center lg:justify-end">
+                <div class="bg-white rounded-lg p-2 shadow-2xl border-4 border-black/80">
+                    <img src="avatar-studios/images/timelines/atla-season1_m.webp"
+                        alt="Avatar: The Last Airbender Season 1"
+                        class="w-full max-w-xl h-auto rounded-sm object-cover" />
+                </div>
+            </div>
+        </section>
+
+        
+
+    </main>
 </body>
+
 </html>
